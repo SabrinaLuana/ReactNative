@@ -1,81 +1,140 @@
 import { Text, View } from "react-native";
-
-// export default function Index() {
-//   return (
-//     <View className="flex-1 justify-center items-center">
-//       <Text className="text-5xl text-pink-900 p-50 ">Bem vindo</Text>
-//     </View>
-//   );
-// }
-
 import React from 'react';
 import { Image, TouchableOpacity, ScrollView } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function App() {
   return (
-    <View className="flex-1 bg-gray-500 p-4">
+    <View className="flex-1 bg-slate-200 p-4">
 
-      {/* Cabeçalho */}
       <View className="flex-row justify-between items-center mb-4">
         <Text className="text-lg font-semibold">Best Dress Collection</Text>
         <Ionicons name="cart-outline" size={24} color="black" />
       </View>
 
-      {/* Filtros */}
       <View className="flex-row flex-wrap mb-4">
-        {['Category', 'Color', 'Size', 'Price', 'More'].map((item, i) => (
-          <TouchableOpacity key={i} className="py-1.5 px-3 bg-gray-200 rounded-full mr-2 mb-2">
-            <Text className="text-sm">{item} ▼</Text>
-          </TouchableOpacity>
-        ))}
+        <TouchableOpacity className="py-1.5 px-3 bg-white rounded-full mr-2 mb-2">
+          <Text className="text-sm">Category ▼</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="py-1.5 px-3 bg-white rounded-full mr-2 mb-2">
+          <Text className="text-sm">Color ▼</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="py-1.5 px-3 bg-white rounded-full mr-2 mb-2">
+          <Text className="text-sm">Size ▼</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="py-1.5 px-3 bg-white rounded-full mr-2 mb-2">
+          <Text className="text-sm">Price ▼</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="py-1.5 px-3 bg-white rounded-full mr-2 mb-2">
+          <Text className="text-sm">More ▼</Text>
+        </TouchableOpacity>
       </View>
 
-      {/* Produtos */}
+
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View className="flex-row justify-between mb-5">
-          <View className="w-[46%] bg-white items-center rounded-lg">
+        
+        <View className="flex flex-row mb-5 justify-between">
+
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
             <Image
-              source={require('../../assets/images/Mulher.png')}
-              className="w-[90%] h-32 rounded-lg mb-1.5"
-              resizeMode="cover"
+              className="rounded-lg mb-1.5 w-52"
+              source={require('../assets/images/Mulher.png')}
+            />
+            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+            <Text className="text-sm font-semibold text-pink-600">$299</Text>
+          </View>
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+            <Image
+              className="rounded-lg mb-1.5 w-52"
+              source={require('../assets/images/Mulher.png')}
+            />
+            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+            <Text className="text-sm font-semibold text-pink-600">$299</Text>
+          </View>
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+            <Image
+              className="rounded-lg mb-1.5 w-52"
+              source={require('../assets/images/Mulher.png')}
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
 
-          <View className="w-[46%] bg-white items-center rounded-lg">
+
+          
+
+          {/* <View className="w-60 bg-white items-center rounded-lg">
             <Image
-              source={require('../../assets/images/Mulher.png')}
-              className="w-[90%] h-32 rounded-lg mb-1.5"
-              resizeMode="cover"
+              source={require('../assets/images/Mulher.png')}
+              className="w-20 h-20 rounded-lg mb-1.5"
+              resizeMode="contain"
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
-          </View>
+          </View> */}
         </View>
 
-        {/* Mais dois cards abaixo */}
         <View className="flex-row justify-between mb-5">
-          <View className="w-[46%] bg-white items-center rounded-lg">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+              <Image
+                className="rounded-lg mb-1.5 w-52"
+                source={require('../assets/images/Mulher.png')}
+              />
+              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+              <Text className="text-sm font-semibold text-pink-600">$299</Text>
+            </View>
+            <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+              <Image
+                className="rounded-lg mb-1.5 w-52"
+                source={require('../assets/images/Mulher.png')}
+              />
+              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+              <Text className="text-sm font-semibold text-pink-600">$299</Text>
+            </View>
+            <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+              <Image
+                className="rounded-lg mb-1.5 w-52"
+                source={require('../assets/images/Mulher.png')}
+              />
+              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+              <Text className="text-sm font-semibold text-pink-600">$299</Text>
+            </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* <View className="w-60 bg-white items-center rounded-lg">
             <Image
-              source={require('../../assets/images/Mulher.png')}
-              className="w-[90%] h-32 rounded-lg mb-1.5"
+              source={require('../assets/images/Mulher.png')}
+              className="w-20 h-20 rounded-lg mb-1.5"
               resizeMode="cover"
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
 
-          <View className="w-[46%] bg-white items-center rounded-lg">
+          <View className="w-60 bg-white items-center rounded-lg">
             <Image
-              source={require('../../assets/images/Mulher.png')}
-              className="w-[90%] h-32 rounded-lg mb-1.5"
+              source={require('../assets/images/Mulher.png')}
+              className="w-20 h-20 rounded-lg mb-1.5"
               resizeMode="cover"
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
-          </View>
+          </View> */}
         </View>
       </ScrollView>
     </View>
