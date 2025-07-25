@@ -1,6 +1,5 @@
-import { Text, View } from "react-native";
+import { Text, View, Image, TouchableOpacity, ScrollView } from "react-native";
 import React from 'react';
-import { Image, TouchableOpacity, ScrollView } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function App() {
@@ -35,106 +34,77 @@ export default function App() {
         
         <View className="flex flex-row mb-5 justify-between">
 
-          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
             <Image
-              className="rounded-lg mb-1.5 w-52"
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
               source={require('../assets/images/Mulher.png')}
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
-          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
             <Image
-              className="rounded-lg mb-1.5 w-52"
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
               source={require('../assets/images/Mulher.png')}
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
-          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
             <Image
-              className="rounded-lg mb-1.5 w-52"
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
               source={require('../assets/images/Mulher.png')}
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
-
-
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
+            <Image
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
+              source={require('../assets/images/Mulher.png')}
+            />
+            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+            <Text className="text-sm font-semibold text-pink-600">$299</Text>
+          </View>
           
-
-          {/* <View className="w-60 bg-white items-center rounded-lg">
-            <Image
-              source={require('../assets/images/Mulher.png')}
-              className="w-20 h-20 rounded-lg mb-1.5"
-              resizeMode="contain"
-            />
-            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
-            <Text className="text-sm font-semibold text-pink-600">$299</Text>
-          </View> */}
+          
         </View>
 
         <View className="flex-row justify-between mb-5">
-          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
-              <Image
-                className="rounded-lg mb-1.5 w-52"
-                source={require('../assets/images/Mulher.png')}
-              />
-              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
-              <Text className="text-sm font-semibold text-pink-600">$299</Text>
-            </View>
-            <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
-              <Image
-                className="rounded-lg mb-1.5 w-52"
-                source={require('../assets/images/Mulher.png')}
-              />
-              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
-              <Text className="text-sm font-semibold text-pink-600">$299</Text>
-            </View>
-            <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap">
-              <Image
-                className="rounded-lg mb-1.5 w-52"
-                source={require('../assets/images/Mulher.png')}
-              />
-              <Text className="text-base font-medium mb-0.5">Dress Name</Text>
-              <Text className="text-sm font-semibold text-pink-600">$299</Text>
-            </View>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          {/* <View className="w-60 bg-white items-center rounded-lg">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
             <Image
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
               source={require('../assets/images/Mulher.png')}
-              className="w-20 h-20 rounded-lg mb-1.5"
-              resizeMode="cover"
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
           </View>
-
-          <View className="w-60 bg-white items-center rounded-lg">
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
             <Image
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
               source={require('../assets/images/Mulher.png')}
-              className="w-20 h-20 rounded-lg mb-1.5"
-              resizeMode="cover"
             />
             <Text className="text-base font-medium mb-0.5">Dress Name</Text>
             <Text className="text-sm font-semibold text-pink-600">$299</Text>
-          </View> */}
+          </View>
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
+            <Image
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
+              source={require('../assets/images/Mulher.png')}
+            />
+            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+            <Text className="text-sm font-semibold text-pink-600">$299</Text>
+          </View>
+          <View className="flex flex-col w-100 h-100 bg-white items-center rounded-lg flex-wrap" style={{width: "20%", height: 350}}>
+            <Image
+              className="rounded-lg mb-1.5 w-52 mt-3" style={{width: "93%", height: "75%"}}
+              source={require('../assets/images/Mulher.png')}
+            />
+            <Text className="text-base font-medium mb-0.5">Dress Name</Text>
+            <Text className="text-sm font-semibold text-pink-600">$299</Text>
+          </View>
+          
+
         </View>
       </ScrollView>
     </View>
